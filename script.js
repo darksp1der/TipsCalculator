@@ -39,7 +39,6 @@ function calculateTip() {
         tipPercentage = parseFloat(tipSelect.value);
     }
 
-    // Clear previous error messages
     clearErrors();
 
     if (isNaN(bill) || bill < 0) {

@@ -35,13 +35,16 @@ input:invalid {
 }
 
 button {
-    background-color: #4CAF50;
     color: white;
     border: none;
     cursor: pointer;
 }
 
-button:hover {
+.calculate-button {
+    background-color: #4CAF50;
+}
+
+.calculate-button:hover {
     background-color: #45a049;
 }
 
@@ -65,4 +68,8 @@ button:hover {
     font-size: 0.9em;
     margin-top: -5px;
     margin-bottom: 10px;
+}
+
+.hidden {
+    display: none;
 }

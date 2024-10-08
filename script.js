@@ -6,9 +6,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     tipSelect.addEventListener('change', function() {
         if (this.value === 'custom') {
-            customTipContainer.style.display = 'block';
+            customTipContainer.classList.remove('hidden');
         } else {
-            customTipContainer.style.display = 'none';
+            customTipContainer.classList.add('hidden');
         }
     });
 
@@ -69,7 +69,7 @@ function reset() {
     document.getElementById('bill').value = '';
     document.getElementById('tipSelect').value = '0';
     document.getElementById('customTip').value = '';
-    document.getElementById('customTipContainer').style.display = 'none';
+    document.getElementById('customTipContainer').classList.add('hidden');
     document.getElementById('result').innerHTML = '';
     clearErrors();
 }

@@ -73,3 +73,8 @@ button {
 .hidden {
     display: none;
 }
+
+input.bill-amount,
+input.custom-tip {
+    width: calc(100% - 20px);
+}
